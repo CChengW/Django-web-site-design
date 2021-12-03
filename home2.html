@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+            <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />           
+            <link href="css/helper.css" rel="stylesheet" type="text/css" />
+            <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+            <link href="css/style.css" rel="stylesheet" type="text/css" />
+        
+        <link rel="shortcut icon" href="favicon.ico"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no" />
+      <title>Netflix - episode search</title>
+  </head>
+<body>
+	<div class="load">
+        <div class='loading'>
+              <div class='bullet'></div>
+              <div class='bullet'></div>
+              <div class='bullet'></div>
+              <div class='bullet'></div>
+        </div>
+    </div>
+    
+    <!-- ============HEADER============= -->
+      
+    <header class="header-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="width-50 logo-mobile-menu">
+                       <div class="logo">
+                          <a href="home2.html">
+                             <img src="img/logo-red.png" alt="logo red">
+                          </a>
+                       </div>
+                       <div class="top-seting-button">
+                           <span class="fa fa-navicon"><a href=""></a></span>
+                       </div>
+                       <div class="top-setting">
+                                    <div class="drop-right">
+                                        <i class="check">Eng</i>
+                                        <a href="#" class="drop-list"><i class="fa fa-angle-down"></i></a>
+                                            <span>
+                                                 <a href="">Eng</a>
+                                                 <a href="">Ua</a>
+                                                 <a href="">Fr</a>
+                                            </span>
+                                    </div>
+                                 <div class="envelop">
+                                    <span class="fa fa-envelope"></span>
+                                    <div class="count"><a href="">5</a></div> 
+                                 </div>
+                                    <span class="fa fa-cog"><a href=""></a></span>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>                   
+        <div class="container padding-none">
+            <div class="col-md-12">
+               <div class="row">
+                  <div class="width-25-left">
+                   <div class="top-share">
+                        <a href="https://plus.google.com/" target="_blank"><span class="fa fa-google-plus"></span></a>
+                        <a href="https://twitter.com/" target="_blank"><span class="fa fa-twitter"></span></a>
+                        <a href="https://dribbble.com/" target="_blank"><span class="fa fa-dribbble"></span></a>
+                        <a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook"></span></a>
+                   </div>
+                   </div>
+                   <div class="width-25-right">
+                           <div class="search white-field">
+                                <input type="text" placeholder="Search Something..">
+                                <button type="submit" class="search-button"><span class="fa fa-search"></span></button>
+                            </div> 
+                   </div>
+                 </div>   
+               </div>
+        <div class="mobile-nav">        
+               <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12">
+                       <div class="header-nav-white">
+                          <div class="navigation">
+                             <div class="close-mobile-menu">
+                                 <span class="fa fa-close"></span>
+                             </div>
+                              <nav>
+                                <div class="sub-menu">
+                                   <a href="#" class="link-color">Home</a>
+                                     <b class="fa fa-plus"></b>
+                                      <span class="bg-white">
+                                         <i class="fa fa-sort-up"></i>
+                                          <a href="index.html">Home #1</a>
+                                          <a href="home2.html">Home #2</a>
+                                          <a href="home3.html">Home #3</a>
+                                          <a href="home4.html">Home #4</a>
+                                          <a href="home5.html">Home #5</a>
+                                          <a href="home6.html">Home #6</a>
+                                          <a href="home7.html">Home #7</a>
+                                          <a href="home8.html">Home #8</a>
+                                          <a href="home9.html">Home #9</a>
+                                      </span>
+                                 </div>
+                                 <div class="sub-menu">
+                                       <a href="#">Types</a>
+                                        <b class="fa fa-plus"></b>
+                                         <span class="bg-white">
+                                            <i class="fa fa-sort-up"></i>
+                                             <a href="category1.html">Categories #1</a>
+                                             <a href="category2.html">Categories #2</a>
+                                             <a href="category3.html">Categories #3</a>
+                                         </span>
+                                 </div>
+                                 <div class="sub-menu">
+                                       <a href="#">Episodes</a>
+                                        <b class="fa fa-plus"></b>
+                                         <span class="bg-white">
+                                            <i class="fa fa-sort-up"></i>
+                                             <a href="single1.html">Single #1</a>
+                                             <a href="single2.html">Single #2</a>
+                                             <a href="single3.html">Single #3</a>
+                                             <a href="single4.html">Single #4</a>
+                                             <a href="single5.html">Single #5</a>
+                                             <a href="single6.html">Single #6</a>
+                                         </span>
+                                 </div>
+                                 <a href="about.html">About</a>
+                                 <a href="contact.html">Contact</a>
+                                 <a href="signin.html">Sign In</a>    
+                              </nav>
+                          </div>
+                       </div> 
+                    </div>
+               </div>
+         </div>
+         </div> 
+    </header>
+    
+    <!-- ============TOP SLIDER============= -->
+    
+    <div class="full-width">
+        <div class="top-slider-tabs">
+               <div class="container">
+                 <div class="row">
+                   <div class="caption-wrap">
+                       <div class="trend-caption">
+                           <h3>New Episode</h3>
+                       </div>
+                   </div>
+                   <div class="trend-tags-wrap">
+                       <div id="scroll-box" class="trend-tabs">
+                                     <ul>
+                                         <li>
+                                             <div class="tabs-wraps">
+                                                   <div class="top-tab blue-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single1.html">Arcane</a></p>
+                                                           <h6>Season releasing on November 6th, 2021</h6>
+                                                    </div>
+                                              </div>
+                                         </li>
+                                         <li>
+                                             <div class="tabs-wraps">
+                                                   <div class="top-tab red-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single2.html">The Unlikely Murderer</a></p>
+                                                           <h6>Limited Series releasing on November 5th, 2021</h6>
+                                                    </div>
+                                              </div>
+                                         </li>
+                                         <li>
+                                            <div class="tabs-wraps">
+                                                    <div class="top-tab green-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single3.html">Love Hard</a></p>
+                                                           <h6>Film releasing on November 5th, 2021</h6>
+                                                    </div>
+                                              </div> 
+                                         </li>
+                                         <li>
+                                             <div class="tabs-wraps">
+                                                    <div class="top-tab blue-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single4.html">Red Notice</a></p>
+                                                           <h6>Film releasing on November 12th, 2021</h6>
+                                                    </div>
+                                              </div> 
+                                         </li>
+                                         <li>
+                                             <div class="swiper-slide">
+                                                    <div class="top-tab yellow-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single5.html">tick, tick...BOOM!</a></p>
+                                                           <h6>Film releasing on November 19th, 2021</h6>
+                                                    </div>
+                                              </div>
+                                         </li>
+                                         <li>
+                                             <div class="tabs-wraps">
+                                                   <div class="top-tab blue-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single1.html">Arcane</a></p>
+                                                           <h6>Season releasing on November 6th, 2021</h6>
+                                                    </div>
+                                              </div>
+                                         </li>
+                                         <li>
+                                             <div class="tabs-wraps">
+                                                   <div class="top-tab red-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single2.html">The Unlikely Murderer</a></p>
+                                                           <h6>Limited Series releasing on November 5th, 2021</h6>
+                                                    </div>
+                                              </div>
+                                         </li>
+                                         <li>
+                                            <div class="tabs-wraps">
+                                                    <div class="top-tab green-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single3.html">Love Hard</a></p>
+                                                           <h6>Film releasing on November 5th, 2021</h6>
+                                                    </div>
+                                              </div> 
+                                         </li>
+                                         <li>
+                                             <div class="tabs-wraps">
+                                                    <div class="top-tab blue-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single4.html">Red Notice</a></p>
+                                                           <h6>Film releasing on November 12th, 2021</h6>
+                                                    </div>
+                                              </div> 
+                                         </li>
+                                         <li>
+                                             <div class="swiper-slide">
+                                                    <div class="top-tab yellow-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single5.html">tick, tick...BOOM!</a></p>
+                                                           <h6>Film releasing on November 19th, 2021</h6>
+                                                    </div>
+                                              </div>
+                                         </li>
+                                         <li>
+                                             <div class="tabs-wraps">
+                                                   <div class="top-tab blue-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single1.html">Arcane</a></p>
+                                                           <h6>Season releasing on November 6th, 2021</h6>
+                                                    </div>
+                                              </div>
+                                         </li>
+                                         <li>
+                                             <div class="tabs-wraps">
+                                                   <div class="top-tab red-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single2.html">The Unlikely Murderer</a></p>
+                                                           <h6>Limited Series releasing on November 5th, 2021</h6>
+                                                    </div>
+                                              </div>
+                                         </li>
+                                         <li>
+                                            <div class="tabs-wraps">
+                                                    <div class="top-tab green-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single3.html">Love Hard</a></p>
+                                                           <h6>Film releasing on November 5th, 2021</h6>
+                                                    </div>
+                                              </div> 
+                                         </li>
+                                         <li>
+                                             <div class="tabs-wraps">
+                                                    <div class="top-tab blue-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single4.html">Red Notice</a></p>
+                                                           <h6>Film releasing on November 12th, 2021</h6>
+                                                    </div>
+                                              </div> 
+                                         </li>
+                                         <li>
+                                             <div class="swiper-slide">
+                                                    <div class="top-tab yellow-tab">
+                                                        <div class="point-tabs"></div>
+                                                           <p><a href="single5.html">tick, tick...BOOM!</a></p>
+                                                           <h6>Film releasing on November 19th, 2021</h6>
+                                                    </div>
+                                              </div>
+                                         </li>
+                                     </ul>
+                        </div>
+                   </div>
+              </div>                   
+            </div>
+        </div>
+        <div class="trend-baner swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                   <div class="trend-slide-wrap">
+                       <img src="img/trend-slide1.jpg" alt="trend">
+                       <div class="hover-info">
+                           <div class="blok-read-sm">
+                                <div class="content-block">
+                                  <span class="point-caption bg-blue-point"></span>
+                                     <span class="top-line bg-blue-point"></span>
+                                       <h4><a href="single1.html">‘Stranger Things’ Day 2021 Recap</a></h4>
+                                          <p class="color-white">Another Stranger Things Day is in the books! Fans all over the world helped us celebrate the day that started it all..</p> 
+                                                   <div class="like-wrap">
+                                                       <i class="fa fa-heart col-red"></i><span>2</span>
+                                                       <i class="fa fa-comment col-green"></i><span>1</span>
+                                                   </div>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="trend-slide-wrap">
+                       <img src="img/trend-slide2.jpg" alt="trend">
+                       <div class="hover-info">
+                           <div class="blok-read-sm">
+                                <div class="content-block">
+                                  <span class="point-caption bg-blue-point"></span>
+                                     <span class="top-line bg-blue-point"></span>
+                                       <h4><a href="single2.html">‘Stranger Things’ Day 2021 Recap</a></h4>
+                                          <p class="color-white">Another Stranger Things Day is in the books! Fans all over the world helped us celebrate the day that started it all..</p> 
+                                                   <div class="like-wrap">
+                                                       <i class="fa fa-heart col-red"></i><span>2</span>
+                                                       <i class="fa fa-comment col-green"></i><span>1</span>
+                                                   </div>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="trend-slide-wrap">
+                       <img src="img/trend-slide3.jpg" alt="trend">
+                       <div class="hover-info">
+                           <div class="blok-read-sm">
+                                <div class="content-block">
+                                  <span class="point-caption bg-blue-point"></span>
+                                     <span class="top-line bg-blue-point"></span>
+                                       <h4><a href="single3.html">‘Stranger Things’ Day 2021 Recap</a></h4>
+                                          <p class="color-white">Another Stranger Things Day is in the books! Fans all over the world helped us celebrate the day that started it all..</p> 
+                                                   <div class="like-wrap">
+                                                       <i class="fa fa-heart col-red"></i><span>2</span>
+                                                       <i class="fa fa-comment col-green"></i><span>1</span>
+                                                   </div>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="trend-slide-wrap">
+                       <img src="img/trend-slide4.jpg" alt="trend">
+                       <div class="hover-info">
+                           <div class="blok-read-sm">
+                                <div class="content-block">
+                                  <span class="point-caption bg-blue-point"></span>
+                                     <span class="top-line bg-blue-point"></span>
+                                       <h4><a href="single4.html">‘Stranger Things’ Day 2021 Recap</a></h4>
+                                          <p class="color-white">Another Stranger Things Day is in the books! Fans all over the world helped us celebrate the day that started it all..</p> 
+                                                   <div class="like-wrap">
+                                                       <i class="fa fa-heart col-red"></i><span>2</span>
+                                                       <i class="fa fa-comment col-green"></i><span>1</span>
+                                                   </div>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="trend-slide-wrap">
+                       <img src="img/trend-slide5.jpg" alt="trend">
+                       <div class="hover-info">
+                           <div class="blok-read-sm">
+                                <div class="content-block">
+                                  <span class="point-caption bg-blue-point"></span>
+                                     <span class="top-line bg-blue-point"></span>
+                                       <h4><a href="single5.html">‘Stranger Things’ Day 2021 Recap</a></h4>
+                                          <p class="color-white">Another Stranger Things Day is in the books! Fans all over the world helped us celebrate the day that started it all..</p> 
+                                                   <div class="like-wrap">
+                                                       <i class="fa fa-heart col-red"></i><span>2</span>
+                                                       <i class="fa fa-comment col-green"></i><span>1</span>
+                                                   </div>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="trend-slide-wrap">
+                       <img src="img/trend-slide3.jpg" alt="trend">
+                       <div class="hover-info">
+                           <div class="blok-read-sm">
+                                <div class="content-block">
+                                  <span class="point-caption bg-blue-point"></span>
+                                     <span class="top-line bg-blue-point"></span>
+                                       <h4><a href="single6.html">‘Stranger Things’ Day 2021 Recap</a></h4>
+                                          <p class="color-white">Another Stranger Things Day is in the books! Fans all over the world helped us celebrate the day that started it all..</p> 
+                                                   <div class="like-wrap">
+                                                       <i class="fa fa-heart col-red"></i><span>2</span>
+                                                       <i class="fa fa-comment col-green"></i><span>1</span>
+                                                   </div>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="trend-slide-wrap">
+                       <img src="img/trend-slide4.jpg" alt="trend">
+                       <div class="hover-info">
+                           <div class="blok-read-sm">
+                                <div class="content-block">
+                                  <span class="point-caption bg-blue-point"></span>
+                                     <span class="top-line bg-blue-point"></span>
+                                       <h4><a href="single6.html">‘Stranger Things’ Day 2021 Recap</a></h4>
+                                          <p class="color-white">Another Stranger Things Day is in the books! Fans all over the world helped us celebrate the day that started it all..</p> 
+                                                   <div class="like-wrap">
+                                                       <i class="fa fa-heart col-red"></i><span>2</span>
+                                                       <i class="fa fa-comment col-green"></i><span>1</span>
+                                                   </div>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                   <div class="slider-nav">
+                       <div class="slide-next"><span class="fa fa-chevron-right"></span></div>
+                       <div class="slide-prev"><span class="fa fa-chevron-left"></span></div> 
+                   </div>
+                </div>                   
+            </div>
+        </div>
+    </div>
+    
+    <!-- ============MAIN BANER============= -->
+        
+    <div class="container white-version padding-none">
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+               <div id="item-cont" class="no-margin">
+                <div class="block-read-big item">
+                       <a href="single1.html" class="hover-image">
+                          <img src="img/sea-full.jpg" alt="post">
+                          <span class="layer-block"></span>  
+                       </a>
+                       <div class="editor-choice">
+                            <i class="fa fa-star"></i>
+                            <a href="">Editor’s Choice</a>
+                       </div>
+                       <div class="content-block">
+                        <span class="point-caption bg-pink"></span>
+                            <h3><a href="single1.html">Let the Games Begin</a></h3>
+                              <p>A New Way to Experience Entertainment on Mobile..</p>
+                                  <div class="button-main bg-fio-point"><a href="single1.html">read more</a></div>
+                                   <div class="like-wrap">
+                                       <div class="last-com">
+                                           <img src="img/news-avatar.png" alt="avatar">
+                                           <h6><a href="">NETFLIX</a><small> on 02 Nov 2021</small></h6>
+                                       </div>
+                                       <div class="like-bottom">
+                                           <a href=""><i class="fa fa-heart col-red"></i></a><span>0</span>
+                                           <a href=""><i class="fa fa-comment col-green"></i></a><span>0</span>
+                                       </div>
+                                   </div>
+                        </div>
+                </div>
+                <div class="block-read-big item">
+                       <a href="single2.html" class="hover-image">
+                          <img src="img/pie-full.jpg" alt="post"> 
+                          <span class="layer-block"></span>
+                       </a>
+                       <div class="editor-choice">
+                            <i class="fa fa-star"></i>
+                            <a href="">Editor’s Choice</a>
+                       </div>
+                       <div class="content-block">
+                        <span class="point-caption bg-yellow"></span>
+                            <h3><a href="single2.html">Netflix Bets Big On Japanese Content And Creators</a></h3>
+                              <p>Netflix Bets Big On Japanese Content And Creators With Growing Slate Across Both Anime & Live Action..</p>
+                                  <div class="button-main bg-fio-point"><a href="single2.html">read more</a></div>
+                                   <div class="like-wrap">
+                                       <div class="last-com">
+                                           <img src="img/news-avatar.png" alt="avatar">
+                                           <h6><a href="">NETFLIX</a><small> on 02 Nov 2021</small></h6>
+                                       </div>
+                                       <div class="like-bottom">
+                                           <a href=""><i class="fa fa-heart col-red"></i></a><span>10</span>
+                                           <a href=""><i class="fa fa-comment col-green"></i></a><span>12</span>
+                                       </div>
+                                   </div>
+                        </div>
+                </div>
+                <div class="block-read-small item">
+                   <div class="block-small-text">
+                       <span class="point-caption bg-red"></span>
+                        <h3><a href="single3.html">Netflix ISP Speed Index for October 2021</a></h3>
+                            <div class="last-com">
+                                <img src="img/news-avatar.png" alt="avatar">
+                                    <h6><a href="">NETFLIX</a><small> on 08 Nov 2021</small></h6>
+                            </div>
+                            <div class="button-main bg-fio-point"><a href="single3.html">read more</a></div>
+                                <div class="like-wrap">
+                                       <a href=""><i class="fa fa-heart col-red"></i></a><span>100</span>
+                                       <a href=""><i class="fa fa-comment col-green"></i></a><span>70</span>
+                                </div>
+                   </div>
+                   <div class="block-small-img">
+                      <a href="" class="hover-image">
+                       <img src="img/brige-small.jpg" alt="post image">
+                       <span class="layer-block"></span>
+                       </a>
+                   </div>
+                </div>
+         
+                <div class="ajax-wrapper">
+                    <div class="block-read-big item">
+                       <a href="single1.html" class="hover-image">
+                          <img src="img/sea-full.jpg" alt="post">
+                          <span class="layer-block"></span>  
+                       </a>
+                       <div class="editor-choice">
+                            <i class="fa fa-star"></i>
+                            <a href="">Editor’s Choice</a>
+                       </div>
+                       <div class="content-block">
+                        <span class="point-caption bg-pink"></span>
+                            <h3><a href="single1.html">Netflix Festival Japan 2021 Continues</a></h3>
+                              <p>Local- And International Stars Gather On Stage For Live Action Day..</p>
+                                  <div class="button-main bg-fio-point"><a href="single1.html">read more</a></div>
+                                   <div class="like-wrap">
+                                       <div class="last-com">
+                                           <img src="img/news-avatar.png" alt="avatar">
+                                           <h6><a href="">NETFLIX</a><small> on 20 Oct 2021</small></h6>
+                                       </div>
+                                       <div class="like-bottom">
+                                           <a href=""><i class="fa fa-heart col-red"></i></a><span>0</span>
+                                           <a href=""><i class="fa fa-comment col-green"></i></a><span>0</span>
+                                       </div>
+                                   </div>
+                        </div>
+                </div>
+                <div class="block-read-big item">
+                       <a href="single2.html" class="hover-image">
+                          <img src="img/pie-full.jpg" alt="post"> 
+                          <span class="layer-block"></span>
+                       </a>
+                       <div class="editor-choice">
+                            <i class="fa fa-star"></i>
+                            <a href="">Editor’s Choice</a>
+                       </div>
+                       <div class="content-block">
+                        <span class="point-caption bg-yellow"></span>
+                            <h3><a href="single2.html">Netflix Announces New Russian Psychological Drama</a></h3>
+                              <p>The character-driven story is written by Eduard Oganesyan..</p>
+                                  <div class="button-main bg-fio-point"><a href="single2.html">read more</a></div>
+                                   <div class="like-wrap">
+                                       <div class="last-com">
+                                           <img src="img/news-avatar.png" alt="avatar">
+                                           <h6><a href="">NETFLIX</a><small> on 09 Nov 2021</small></h6>
+                                       </div>
+                                       <div class="like-bottom">
+                                           <a href=""><i class="fa fa-heart col-red"></i></a><span>10</span>
+                                           <a href=""><i class="fa fa-comment col-green"></i></a><span>8</span>
+                                       </div>
+                                   </div>
+                        </div>
+                </div>
+                </div>
+                
+                <div class="ajax-wrapper">
+                   <div class="block-read-big item">
+                       <a href="single6.html" class="hover-image">
+                          <img src="img/girl-with-smoke-full.jpg" alt="post"> 
+                          <span class="layer-block"></span>
+                       </a>
+                       <div class="content-block">
+                        <span class="point-caption bg-blue"></span>
+                            <h3><a href="single6.html">Netflix teams up with Hirokazu Kore-eda..</a></h3>
+                              <p>Netflix teams up with Hirokazu Kore-eda to develop multiple projects..</p>
+                                  <div class="button-main bg-fio-point"><a href="single6.html">read more</a></div>
+                                   <div class="like-wrap">
+                                       <div class="last-com">
+                                           <img src="img/news-avatar.png" alt="avatar">
+                                           <h6><a href="">NETFLIX</a><small> on 09 Nov 2021</small></h6>
+                                       </div>
+                                       <div class="like-bottom">
+                                           <a href=""><i class="fa fa-heart col-red"></i></a><span>6</span>
+                                           <a href=""><i class="fa fa-comment col-green"></i></a><span>9</span>
+                                       </div>
+                                   </div>
+                        </div>
+                 </div> 
+                </div>
+                
+                
+                </div>
+                <div class="itemLoad">
+                     <a href="">
+                         <img src="img/load-more.GIF" alt="load more">
+                     </a>
+                 </div>
+            </div>
+            
+            <!-- ============SIDEBAR============= -->
+            
+            <div class="col-md-4 col-sm-12">
+                <div class="sidebar sidebar-white">
+                    <div class="sidebar-category">
+                       <h4>Categories</h4>
+                            <ul>
+                                <li><a href="">Film</a><span>(14)</span></li>
+                                <li><a href="">Series</a><span>(56)</span></li>
+                                <li><a href="">Documentary</a><span>(41)</span></li>
+                                <li><a href="">Art</a><span>(55)</span></li>
+                                <li><a href="">Kids</a><span>(38)</span></li>
+                                <li><a href="">Reality</a><span>(17)</span></li>
+                            </ul>
+                    </div>
+                    <div class="more-like">
+                        <h4>More news</h4>
+                           <div class="like-block">
+                               <h5><a href="">Netflix and Archie Comics Partner for the Live-Action Musical Film..</a></h5>
+                               <h6>By Anonymous in <a href="" class="col-orange">Film</a></h6>
+                           </div>
+                           <div class="like-block">
+                               <h5><a href="">Netflix Announces New Russian Psychological Drama</a></h5>
+                               <h6>By Anonymous in <a href="" class="col-blue">Art</a></h6>
+                           </div>
+                           <div class="like-block">
+                               <h5><a href="">‘The Harder They Fall’ Puts the Spotlight on Real-Life Figures Ignored by Westerns</a></h5>
+                               <h6>By Anonymous in <a href="" class="col-yellow">Reality</a></h6>
+                           </div>
+                    </div>
+                    <div class="block-mag bg-green">
+                      <div class="mag-layer"></div>
+                       <div class="bg">
+                          <img class="center_img" data-width-img="336" data-height-img="280" src="img/mag.jpg" alt="mag">
+                       </div>
+                    </div>
+                    <div class="connect-wiget">
+                    <h4>Connect with us</h4>
+                        <div class="follow-block-wrap">
+                            <div class="follow-block bg-blue">
+                                <a href="">
+                                    <i class="fa fa-twitter"></i>
+                                    <h6>220k+</h6>
+                                    <span>Followers</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="follow-block-wrap">
+                            <div class="follow-block bg-pink">
+                                <a href="">
+                                    <i class="fa fa-dribbble"></i>
+                                    <h6>16k+</h6>
+                                    <span>Followers</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="follow-block-wrap">
+                            <div class="follow-block bg-dark-blue">
+                                <a href="">
+                                    <i class="fa fa-tumblr"></i>
+                                    <h6>36k+</h6>
+                                    <span>Followers</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="follow-block-wrap">
+                            <div class="follow-block bg-red">
+                                <a href="">
+                                    <i class="fa fa-google-plus"></i>
+                                    <h6>1M+</h6>
+                                    <span>Likes</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="follow-block-wrap">
+                            <div class="follow-block bg-blue-f">
+                                <a href="">
+                                    <i class="fa fa-instagram"></i>
+                                    <h6>70k+</h6>
+                                    <span>Followers</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="follow-block-wrap">
+                            <div class="follow-block bg-extra-red">
+                                <a href="">
+                                    <i class="fa fa-pinterest"></i>
+                                    <h6>16k+</h6>
+                                    <span>Followers</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subscribe">
+                      <h4>Subscribe to Newsletter</h4>
+                        <div class="email-field">
+                            <form action="/">      
+                                   <div class="email-input">
+                                      <input type="email" placeholder="Enter your email..." required>
+                                      <i class="fa fa-check col-green"></i>
+                                   </div>      
+                              <button type="submit" class="button-main bg-green">Submit</button>
+                            </form>  
+                              <span>We never spam :)</span>
+                        </div> 
+                    </div>
+                   <div class="archive">
+                       <h4>Archive</h4>
+                       <div class="archive-baner">
+                               <div class="archive-slide"> 
+                                    <div class="arc-year"> 
+                                        <h5>2015</h5> 
+                                           <i class="fa fa-angle-up col-yellow"></i>
+                                              <span class="scrollbar-inner">
+                                                  <a href="">January</a><a href="">February</a><a href="">March</a><a href="">April</a>
+    <a href="">May</a><a href="">June</a><a href="">July</a><a href="">August</a><a href="">September</a><a href="">October</a><a href="">November</a>
+    <a href="">December</a>
+                                              </span>
+                                    </div> 
+                               </div> 
+                               <div class="archive-slide"> 
+                                    <div class="arc-year"> 
+                                        <h5>2014</h5> 
+                                           <i class="fa fa-angle-up col-yellow"></i>
+                                              <span class="scrollbar-inner">
+                                                  <a href="">January</a><a href="">February</a><a href="">March</a><a href="">April</a>
+    <a href="">May</a><a href="">June</a><a href="">July</a><a href="">August</a><a href="">September</a><a href="">October</a><a href="">November</a>
+    <a href="">December</a>
+                                              </span>
+                                    </div> 
+                               </div>
+                               <div class="archive-slide"> 
+                                    <div class="arc-year"> 
+                                        <h5>2013</h5> 
+                                           <i class="fa fa-angle-up col-yellow"></i>
+                                              <span class="scrollbar-inner">
+                                                  <a href="">January</a><a href="">February</a><a href="">March</a><a href="">April</a>
+    <a href="">May</a><a href="">June</a><a href="">July</a><a href="">August</a><a href="">September</a><a href="">October</a><a href="">November</a>
+    <a href="">December</a>
+                                              </span>
+                                    </div> 
+                               </div>
+                       </div>
+                           <div class="arch-points">
+                               <span></span>
+                               <span></span>
+                               <span></span>
+                           </div>
+                        <div class="archive-baner-ajax archive-baner">
+                               <div class="archive-slide"> 
+                                    <div class="arc-year"> 
+                                        <h5>2012</h5> 
+                                           <i class="fa fa-angle-up col-yellow"></i>
+                                              <span class="scrollbar-inner">
+                                                  <a href="">January</a><a href="">February</a><a href="">March</a><a href="">April</a>
+    <a href="">May</a><a href="">June</a><a href="">July</a><a href="">August</a><a href="">September</a><a href="">October</a><a href="">November</a>
+    <a href="">December</a>
+                                              </span>
+                                    </div> 
+                               </div> 
+                               <div class="archive-slide"> 
+                                    <div class="arc-year"> 
+                                        <h5>2011</h5> 
+                                           <i class="fa fa-angle-up col-yellow"></i>
+                                              <span class="scrollbar-inner">
+                                                  <a href="">January</a><a href="">February</a><a href="">March</a><a href="">April</a>
+    <a href="">May</a><a href="">June</a><a href="">July</a><a href="">August</a><a href="">September</a><a href="">October</a><a href="">November</a>
+    <a href="">December</a>
+                                              </span>
+                                    </div> 
+                               </div>
+                               <div class="archive-slide"> 
+                                    <div class="arc-year"> 
+                                        <h5>2010</h5> 
+                                           <i class="fa fa-angle-up col-yellow"></i>
+                                              <span class="scrollbar-inner">
+                                                  <a href="">January</a><a href="">February</a><a href="">March</a><a href="">April</a>
+    <a href="">May</a><a href="">June</a><a href="">July</a><a href="">August</a><a href="">September</a><a href="">October</a><a href="">November</a>
+    <a href="">December</a>
+                                              </span>
+                                    </div> 
+                               </div>
+                       </div>   
+                    </div>
+                    <div class="sidebar-comments">
+                        <h4>Latest Comments</h4>
+                           <div class="sid-comm-block">
+                               <h5>Great</h5>
+                               <h6><span class="col-grey-ligth">Anonymous in</span> Documentary <a href="" class="col-orange">[...]</a></h6>
+                           </div>
+                           <div class="sid-comm-block">
+                               <h5>Good film!</h5>
+                               <h6><span class="col-grey-ligth">Anonymous in</span> Film <a href="" class="col-orange">[...]</a></h6>
+                           </div>
+                    </div>
+                    <div class="popular-article">
+                        <h4>Popular comments</h4>
+                            <div class="block-with-img">
+                              <img src="img/popular-article1.jpg" alt="block image">
+                               <div class="block-img">
+                                  <h5><a href="single1.html">...</a></h5>
+                                      <h6>By ... in <a href="">...</a></h6>
+                                          <div class="like-wrap">
+                                              <i class="fa fa-heart col-red"></i><span>...</span>
+                                              <i class="fa fa-comment col-green"></i><span>...</span>
+                                              <i class="fa fa-share-alt col-yellow"></i>
+                                          </div>
+                               </div>
+                            </div>
+                            <div class="block-with-caption">
+                                <img src="img/popular-article2.jpg" alt="popular article">
+                                    <div class="popular-ar-caption">
+                                        <div class="left-color-line bg-green"></div>
+                                        <h5><a href="single2.html">...</a></h5>
+                                    </div>
+                            </div>
+                            <div class="block-with-caption">
+                                <img src="img/popular-article3.jpg" alt="popular article">
+                                    <div class="popular-ar-caption">
+                                        <div class="left-color-line bg-yellow-light"></div>
+                                        <h5><a href="single3.html">...</a></h5>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ============FOOTER============= -->
+
+    <footer>
+      <div class="footer-wrap">
+       <div class="footer-top-line">
+           <img src="img/footer-top-line.jpg" alt="color top line">
+       </div>
+        <div class="move-top-page">
+            <div class="container">
+                  <div class="footer-bottom-content">
+                       <div class="button-totop">
+                          <span class="fa fa-angle-up"></span>
+                       </div>
+                        <nav>
+                            <a href="index.html">Home</a>
+                            <a href="#">Work</a>
+                            <a href="about.html">About</a>
+                            <a href="signin.html">Sign In</a>
+                            <a href="#">Types</a>
+                            <a href="#">Episodes</a>
+                        </nav>
+                        <div class="copyright">
+                            <span> Developed by ChengCheng Wang and Hongyu Wang<br></span>
+                            <span>All Rights Reserved</span>
+                        </div>
+                  </div>
+            </div>
+        </div>
+      </div>    
+    </footer>      
+    
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/all.js"></script>
+</body>
+</html>
